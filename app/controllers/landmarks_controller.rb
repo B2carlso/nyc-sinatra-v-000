@@ -30,6 +30,6 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find_by_id(params[:id])
     @landmark.update(name: params[:landmark][:name], year_completed: params[:landmark][:year_completed])
 
-    redirect "/landmarks/#{@landmark.id}" #Gui doesn't want to. No means no.
+    redirect "/landmarks/#{@landmark.id}" 
   end
 end
